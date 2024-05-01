@@ -1,0 +1,740 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font: inherit;
+    color: #FFD60A;
+    font-weight: 600;
+}
+
+h1 {
+    color: #FFD60A;
+    font-family: "Abril Fatface", serif;
+    font-size: 32px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #FFD60A;
+}
+
+h2 {
+    color: #FFC300;
+    font-family: "Abril Fatface", serif;
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #FFC300;
+
+}
+
+h3 {
+    font-size: 28PX;
+}
+
+p {
+    color: white;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+    background-color: #e9ecef;
+}
+
+header {
+    background-color: black;
+    color: #FFC300;
+    height: 100%;
+    width: 100%;
+}
+
+.nav-desktop {
+    display: none;
+}
+
+@media (min-width: 800px) {
+    .nav-desktop {
+        display: block;
+    }
+}
+
+.nav-mobile {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+@media (min-width: 800px) {
+    .nav-mobile {
+        display: none;
+    }
+}
+
+.logo-mobile img {
+    width: 50px;
+}
+
+.menu-mobile {
+    width: 100%;
+}
+
+.menu-hamburguer {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.hamb-lines {
+  width: 30px;
+  border: 1px solid #FFD60A;
+  margin-bottom: 5px;
+  transform: translateY(0) rotate(0deg);
+  transition: transform 0.5s ease;
+}
+
+.hamb-menu-panel {
+	display: block;
+	position: fixed;
+	top: 85px;
+	right: -801px;
+	background-color: #fae68393;
+	color: black;
+	width: 80%;
+	font-size: 32px;
+	transition: right 0.5s ease;
+    z-index: 100;
+}
+
+.hamb-menu-panel a {
+    color: black;
+}
+
+
+
+
+
+.hamb-menu-panel ul {
+	padding: 0;
+	margin: 0;
+}
+
+.li-wrapper {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.329);
+	padding: 20px;
+}
+
+.li-wrapper li {
+	list-style-type: none;
+}
+
+
+
+.nav-desktop-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 0px 300px;
+    padding-top: 10px;
+
+}
+
+@media (min-width: 800px) and (max-width: 1280px) {
+    .nav-desktop-wrapper {
+        margin: 0px 20px;
+    }
+}
+
+.logo {
+    flex: 25%;
+    position: relative;
+}
+
+.logo img {
+    width: 20%;
+}
+
+@media (min-width: 800px) and (max-width: 1280px) {
+    .logo img {
+        width: 50px;
+    }
+}
+
+.topbar-links {
+    flex: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topbar-links a {
+    padding: 10px;
+}
+
+.topbar-links a:last-child {
+    background-color: #FFD60A;
+    color: black;
+    font-weight: 900;
+}
+
+.dobra1-titulo {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.dobra1-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/art.png');
+}
+
+.dobra1-text {
+    margin: 0px 10px;
+    text-align: center;
+}
+
+
+@media (min-width: 1400px) {
+    .dobra1-text {
+        margin-left: 20vw;
+        width: 30%;
+        line-height: 30px;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0px;
+        z-index: 6;
+    }
+
+}
+
+
+
+ 
+
+
+@media (min-width: 800px) and (max-width: 1400px) {
+    .dobra1-text {
+        margin-left: 5vw;
+        width: 50%;
+        max-width: 450px;
+        line-height: 25px;
+    }
+}
+
+
+
+.dobra1-text p {
+    font-size: 18px;
+}
+
+@media (min-width: 800px) and (max-width: 1280px) {
+    .dobra1-text p {
+        font-size: 16px;
+    }
+}
+
+.dobra1-imagem {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/woman-portrait-1501329-Photoroom.png-Photoroom.png');
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    left: 400px;
+    bottom: 0;
+}
+
+@media (max-width: 799px) {
+    .dobra1-imagem {
+        display: none;
+    }
+}
+
+.dobra1-imagem-mobile {
+    display: none;
+}
+
+.dobra1-imagem-mobile img {
+    width: 75%;
+    max-width: 350px;
+}
+
+@media (max-width: 799px) {
+    .dobra1-imagem-mobile {
+        display: block;
+        text-align: center;
+        height: 100%;
+        margin-top: -100px;
+
+    }
+}
+
+
+
+@media (min-width: 800px) and (max-width: 899px) {
+    .dobra1-imagem {
+        left: 250px;
+        background-size: 90%;
+        width: 800px;
+        bottom: 0;
+    }
+}
+
+@media(min-width: 800px)and (max-width: 899px) {
+    .dobra1-wrapper {
+        background-position: 60% 5%;
+        
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1024px) {
+    .dobra1-imagem {
+        left: 250px;
+        background-size: 90%;
+        width: 100%;
+        max-width: 1000px;
+        bottom: 0;
+        margin-left: 5vw;
+
+    }
+}
+
+@media(min-width: 900px)and (max-width: 1024px) {
+    .dobra1-wrapper {
+        background-position: 60% 5%;
+        
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1400px) {
+    .dobra1-imagem {
+        left: 300px;
+        background-size: 90%;
+        width: 100%;
+        max-width: 1000px;
+        bottom: 0;
+        margin-left: 5vw;
+        
+
+    }
+}
+
+@media(min-width: 1024px)and (max-width: 1400px) {
+    .dobra1-wrapper {
+        background-position: 60% 5%;
+        
+    }
+}
+
+@media (min-width: 1401px) and (max-width: 1599px) {
+    .dobra1-imagem {
+        left: 200px;
+        width: 1888px;
+
+
+    }
+}
+
+@media(min-width: 1400px)and (max-width: 1599px) {
+    .dobra1-wrapper {
+        background-position: 60% 5%;
+        
+    }
+}
+
+.dobra2-equipe {
+    width: 100%;
+    height: 100%;
+}
+
+.dobra2-left-image {
+    display: flex;
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media (min-width: 800px ) and (max-width: 999px) {
+    .dobra2-left-image {
+        flex: 1;
+    }
+}
+
+@media (min-width: 1000px ) and (max-width: 1280px) {
+    .dobra2-left-image {
+        flex: '';
+    }
+}
+
+.foto-legenda {
+    position: absolute;
+    width: 75%;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.767);
+    color: white;
+    padding: 30px 20px;
+}
+
+@media (min-width: 800px ) and (max-width: 1280px) {
+    .foto-legenda {
+        min-width: 220px;
+    }    
+}
+
+.foto-legenda * {
+    margin-bottom: 0;
+    padding: 0;
+    line-height: 0;
+}
+    
+
+.dobra2-left-image img {
+    width: 75%;
+}
+
+@media (min-width: 800px ) and (max-width: 1280px) {
+    .dobra2-left-image img {
+        min-width: 220px;
+        max-width: 500px;
+    }    
+}
+
+.foto-legenda, .dobra2-left-image img {
+    margin-left: 13%;
+}
+
+@media (max-width: 799px) {
+    .foto-legenda, .dobra2-left-image img {
+        margin-left: 0px;
+    }    
+}
+
+@media (max-width: 799px) {
+    .foto-legenda {
+
+  left: 50%; /* Align to 50% from the left */
+  transform: translate(-50%); /* Center alignment */
+    } 
+}
+
+
+.nossa-equipe-imagem-right img {
+    width: 75%;
+}
+.dobra2-equipe p {
+    color: #000814c9;
+}
+
+.dobra2-wrapper {
+    display: flex;
+    margin: 100px 40vh;
+}
+
+@media (max-width: 799px) {
+    .dobra2-wrapper {
+        margin: 100px 20px;
+        text-align: center;
+        flex-direction: column-reverse;
+    }    
+}
+
+@media (min-width: 800px ) and (max-width: 1280px) {
+    .dobra2-wrapper {
+        margin: 100px 40px;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1281px ) {
+    .dobra2-wrapper {
+        margin: 100px 10vw;
+        align-items: center;
+    }
+}
+
+.dobra2-right-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 800px ) and (max-width: 999px) {
+    .dobra2-right-wrapper {
+        flex: 1;
+    }
+}
+
+@media (min-width: 1000px ) and (max-width: 1280px) {
+    .dobra2-right-wrapper {
+        flex: '';
+    }
+}
+
+.nossa-equipe-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.nossa-equipe-stats {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0px 20px;
+    flex: 50%;
+
+}
+
+.nossa-equipe-imagem-right {
+    flex: 50%;
+}
+
+.nossa-equipe-stats p {
+    color: white;
+
+}
+
+b {
+    color: #FFD60A;
+}
+
+.dobra3-escritorio {
+    width: 100%;
+    background-image: url('images/dobra3-art.svg');
+    background-size: 135%;
+    background-position: right;
+}
+
+.dobra3-wrapper {
+    display: flex;
+    margin: 100px 40vh;
+    height: 100%;
+}
+
+@media (max-width: 799px) {
+    .dobra3-wrapper {
+        flex-direction: column-reverse;
+        margin: 100px 0px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1280px) {
+    .dobra3-wrapper {
+        flex-direction: column-reverse;
+        margin: 100px 0px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1599px) {
+    .dobra3-wrapper {
+
+        margin: 100px 10vw;
+        text-align: center;
+    }
+}
+
+.dobra3-text {
+    flex: 0.4;
+    padding: 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.iframe {
+    border-radius: 20px;
+
+    z-index: 200;
+    padding-right: 70px;
+
+}
+
+
+
+.dobra3-text iframe {
+    width: 100%;
+    z-index: 100;
+    border-radius: 20px;
+}
+
+
+h6 {
+    color: #e9ecef;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 50px;
+    margin: 0;
+    margin-bottom: 50px;
+    padding-right: 70px;
+    text-align: center;
+}
+
+@media (max-width: 799px) {
+    h6, .iframe {
+        padding-right: 0px;
+        margin: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1280px) {
+    h6, .iframe {
+        padding-right: 0px;
+        margin: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+.dobra3-imagens {
+    flex: 0.6;
+    background-color: #e9ecef;
+    padding: 50px;
+}
+
+.dobra3-imagens {
+
+}
+
+.dobra3-imagens img {
+    width: 100%;
+}
+
+.dobra3-imagens img:hover {
+    width: 100%;
+    cursor: pointer;
+    transform: scale(1.01)
+}
+
+.dobra4-testemunhos {
+    margin: 100px 40vh;
+}
+
+@media (max-width: 799px) {
+    .dobra4-testemunhos {
+        margin: 100px 20px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1280px) {
+    .dobra4-testemunhos {
+        margin: 100px 100px;
+    }
+}
+
+.dobra4-icones {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    border-radius: 20px;
+}
+
+@media (max-width: 799px) {
+    .dobra4-icones {
+        flex-direction: column;
+    }
+}
+
+.icones-panels {
+    padding: 50px;
+    text-align: center;
+}
+
+.icones-panels img {
+    width: 25%;
+    filter: invert(100%);
+}
+
+.dobra4-testemunhos p {
+    color: black;
+    line-height: 30px;
+}
+
+.dobra4-icones p {
+    color: #e9ecef;
+    line-height: inherit;
+}
+
+.dobra4-icones h4 {
+    color: #FFD60A;
+}
+
+.linha-amarela {
+    width: 5px;
+    height: 200px;
+    background-color: #FFD60A;
+}
+
+@media (max-width: 799px) {
+    .linha-amarela {
+        display: none;
+    }
+}
+
+.dobra5-CTA {
+    margin: 100px 40vh;
+    text-align: center;
+}
+
+@media (max-width: 799px) {
+    .dobra5-CTA {
+        margin: 100px 20px;
+    }
+}
+
+.dobra5-CTA h5 {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.dobra5-CTA button {
+    background-color: black;
+    color: #FFD60A;
+    border: 0px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.dobra5-CTA button:hover {
+    transform: scale(1.1)
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0;
+    height: 100%;
+    border: 1px solid black;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+
